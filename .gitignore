@@ -1,0 +1,17 @@
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+.idea/
+
+# Python bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuzione / Pacchetti
+dist/
+build/
+*.egg-info/

@@ -20,7 +20,7 @@ tipi visti durante il corso
     FUNZIONI =  def nomefunzione(param1, ...)
                     return -> ricorda che return interrompe SEMPRE la funzione  
 
-                    yield -> somiglia ad un return e interrompe la funzione ma crea un punto di ritorno dove si rientra nella funzione quando viene richiamata, op se finisce un serviizio che aveva chiamato in causa lo yield.
+                    yield -> somiglia ad un return e interrompe la funzione ma crea un punto di ritorno dove si rientra nella funzione quando viene richiamata, op se finisce un servizio che aveva chiamato in causa lo yield.
 
         ES:     def f(p1: int/float, p2:str, pn=True) -> int 
                 """
@@ -31,3 +31,20 @@ tipi visti durante il corso
 
     in un caso come questo se abbiamo una tupla T= (1,..,n) e vogliamo mettreli in una funzione invece che fare F=(T[0],T[1],...) facciamo F(*T) e python spacchetta tutto ciò che c'è nella tupla e li passa in ordine alla funzione.
     Stessa cosa si può fare con i dizionari -> D = {"p1": ..., "pn": ...} -> F(**D) 
+
+Classi				Oggetto/istanza			Attributi		Metodi 
+caratteristiche/		mac1 = macchina(...)
+descrizioni/			colore="rosso"
+
+
+@nome_desc --> 
+def func(...):
+...		
+
+@app.metodo() -> get, post, patch, delete
+get tutte le richieste passano attravarso URL -> api/r1/p2/ef?p=1&
+post TUTTI i parametri sono nel payload 	
+per login richiesta post per inviare
+possiamo mettere prefix
+
+

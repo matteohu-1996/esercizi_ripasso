@@ -1,0 +1,33 @@
+tipi visti durante il corso
+
+->
+    list   [1,2,3] è ordinata. lista[i] -> tempo costante qualsiasi valore cerchiamo per indice, mentre cercare se qualcosa esiste ha un tempo proporzionale al numero di elementi nella lista
+    tuple (1,2,3) nate per essere immutabili.
+
+->
+    dict = {coppie "chiave" : valore} chiavi e valori non sono ordinati 
+    set =  {valori -> "a","b","c"} non sono ordinati e sono rappresentati da un insieme con dentro i tre valori. Sempre elementi univoci e senza ripetizioni. Come le liste sono ad  accesso costante quando cerchiamo qualcosa in set.
+
+->
+    int
+    float
+    str =  si puo convertire tutta maiusc o minusc, posso iterare ma è comunque simile a una tupla perché non è modificabile.
+           ES: "abc".upper() = "ABC"     S="abc"  S=S.upper()  
+
+
+
+-> 
+    FUNZIONI =  def nomefunzione(param1, ...)
+                    return -> ricorda che return interrompe SEMPRE la funzione  
+
+                    yield -> somiglia ad un return e interrompe la funzione ma crea un punto di ritorno dove si rientra nella funzione quando viene richiamata, op se finisce un serviizio che aveva chiamato in causa lo yield.
+
+        ES:     def f(p1: int/float, p2:str, pn=True) -> int 
+                """
+                    commento
+                """
+                return
+
+
+    in un caso come questo se abbiamo una tupla T= (1,..,n) e vogliamo mettreli in una funzione invece che fare F=(T[0],T[1],...) facciamo F(*T) e python spacchetta tutto ciò che c'è nella tupla e li passa in ordine alla funzione.
+    Stessa cosa si può fare con i dizionari -> D = {"p1": ..., "pn": ...} -> F(**D) 

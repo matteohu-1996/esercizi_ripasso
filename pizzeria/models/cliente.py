@@ -11,5 +11,5 @@ class Cliente(Base):
     indirizzo = Column(String(100))
 
     # relazione con gli ordini
-    ordini = relationship("Ordine", back_populates="cliente\")
+    ordini = relationship("Ordine", back_populates="cliente")
 

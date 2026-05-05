@@ -23,7 +23,7 @@ def get_libri(
     return libri[skip:skip + limit]
 
 def get_libro(db: Session, libro_id: int):
-    return db.query(Libro).filter(Libro.id == libro_id).first()
+    return db.query(Libro).filter(Libro.libro_id == libro_id).first()
 
 def create_libro(db: Session, libro: LibroCreate):
     data = libro.model_dump(exclude={"tags_ids"})

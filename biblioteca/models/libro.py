@@ -18,7 +18,7 @@ class Libro(Base):
     disponibile = Column(Boolean, default=True, index=True)
 
     tags = relationship("Tag",secondary=libro_tags, back_populates="libri")
-    voce = relationship("VocePrestito", back_populates="libro")
+    voci = relationship("VocePrestito", back_populates="libro")
 
     @property
     def durata_totale(self):

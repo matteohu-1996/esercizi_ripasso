@@ -36,4 +36,4 @@ class VocePrestito(Base):
     prestito = relationship("Prestito", back_populates="voci")
     libro = relationship("Libro", back_populates="voci")
 
-    tag_extra = relationship("Libro", secondary=voce_tags_extra, back_populates="voci_extra")
+    tags_extra = relationship("Tag", secondary=voce_tags_extra, back_populates="voci_extra")

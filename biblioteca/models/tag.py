@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
 from database import Base
-from models.relazioni import voce_tags_extra
+from models.relazioni import voce_tags_extra, libro_tags
 
 
 class Tag(Base):
@@ -13,5 +13,5 @@ class Tag(Base):
     riservato = Column(Boolean, default=False, nullable=False)
     didattico = Column(Boolean, default=False, nullable=False)
 
-    libri = relationship("Libri", back_populates="tags")
+    libri = relationship("Libro",secondary=libro_tags, back_populates="tags")
     voci_extra = relationship("VocePrestito", secondary=voce_tags_extra, back_populates="tags_extra")
